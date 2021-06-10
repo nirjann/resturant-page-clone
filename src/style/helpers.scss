@@ -1,0 +1,15 @@
+.container {
+    padding: 4rem;
+}
+
+
+.btn-secondary {
+    border: 1px solid #fff;
+    padding: 0.8rem;
+    color: #fff;
+    &:hover {
+        color: #111;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+    }
+}

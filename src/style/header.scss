@@ -1,0 +1,31 @@
+.header {
+    background: url('../static/images/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-logo {
+    h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        color: #fff;
+    }
+}
+
+.nav-item {
+    margin-inline: 1.2rem;
+    font-size: 1.0rem;
+}
