@@ -1,0 +1,17 @@
+@use 'abstract' as *;
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    @include font('Montserrat', 400);
+}
