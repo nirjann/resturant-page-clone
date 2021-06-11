@@ -64,8 +64,13 @@ function renderHeader() {
     renderNavbar();
     const headerShowWrapper = document.querySelector('.header-show');
     headerShowWrapper.innerHTML = `
-        <h2 class = 'show-text'> PLEASE HAVE SOME FOOD </h2>
-        <a href = '#' class = 'btn-primary'>RESERVE TABLE </a>
+        <div class = "show-content">
+            <h2 class = 'show-text'> PLEASE HAVE SOME <span>FOOD</span> </h2>
+            <a href = '#' class = 'reserve-btn btn-primary'>RESERVE TABLE </a>
+            <a href = "#" class = 'menu-link'>Browse Menu </a>
+        </div>
     `;
+
+    
 }
 export {renderHeader};

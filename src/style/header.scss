@@ -2,13 +2,16 @@
     background: url('../static/images/header-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    
+    background-attachment: scroll;
 }
+
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 10px;
 }
 
 .nav-menu {
@@ -28,4 +31,39 @@
 .nav-item {
     margin-inline: 1.2rem;
     font-size: 1.0rem;
+}
+
+// show section
+.show-content {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+.header-show {
+    height: 600px;
+    text-align: left;
+}
+
+.show-text {
+    font-size: 4rem;
+    color: #fff;
+    span {
+        border-bottom: 5px solid #fff;
+        &:hover {
+            border: 5px solid #fff;
+            transition: all 0.2s ease-in-out; 
+;        }
+    }
+}
+
+.reserve-btn {
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.menu-link {
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+    margin-inline: 20px;
 }
