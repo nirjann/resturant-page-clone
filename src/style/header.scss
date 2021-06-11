@@ -1,9 +1,9 @@
-.header {
-    background: url('../static/images/header-bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
+// .header {
+//     background: url('../static/images/header-bg.jpg');
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-attachment: scroll;
+// }
 
 
 
@@ -49,6 +49,7 @@
     color: #fff;
     span {
         border-bottom: 5px solid #fff;
+        cursor: pointer;
         &:hover {
             border: 5px solid #fff;
             transition: all 0.2s ease-in-out; 
