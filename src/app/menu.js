@@ -1,5 +1,5 @@
 import '../style/menu.scss';
-const json = require('../static/json/menu-items.json');
+import '../static/json/menu-items.json'; 
 
 function makeMenuSkeleton() {
     const menu = document.getElementById('tabbed-menu');
@@ -13,4 +13,3 @@ function makeMenuSkeleton() {
 
 
 }
-console.dir(json);

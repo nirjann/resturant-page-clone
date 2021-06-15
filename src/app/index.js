@@ -6,4 +6,3 @@ import './menu';
 
 renderHeader();
 makeChefSkeleton();
-console.log();

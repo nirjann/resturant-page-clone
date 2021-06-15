@@ -6,6 +6,8 @@ module.exports = {
     entry: {
         index: "./src/app/index.js",
         header: "./src/app/header.js",
+        menu: "./src/app/menu.js",
+        chef: "./src/app/chef.js",
     },
     output: {
         filename: '[name].bundle.js',
@@ -35,7 +37,7 @@ module.exports = {
                 test: /\.(jpg|jpeg|png|svg)$/i,
                 type: 'asset/resource',
             },
-           
+       
         ],
     },
 };
