@@ -1,2 +1,25 @@
 // Styles for Menu section
+.menu-heading {
+    margin: 2rem auto;
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    width: 60%;
+    padding-bottom: 1.2rem;
+}
 
+// tabbed menu
+.menu-genre-items {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.9rem;
+    border-bottom: 2px solid #fff;
+}
+
+.menu-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+}

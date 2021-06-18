@@ -3,7 +3,8 @@ import '../style/chef.scss';
 function makeChefSkeleton() {
     const chefSection = document.getElementById('chef');
     const chefContainer = document.createElement('div');
-    chefContainer.classList.add('container', 'chef-wrapper');
+    chefContainer.classList.add('container', 'chef-wrapper')
+    chefContainer.id = "Chef";
 
     chefContainer.innerHTML = `
         <div class = 'chef-avatar'>

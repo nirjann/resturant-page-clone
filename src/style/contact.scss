@@ -1,0 +1,31 @@
+#contact {
+    background-color: rgba(#fff, 0.4);
+    margin-top: 1.5rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0.9rem;
+}
+.intro {
+    width: 450px;
+    h2 {
+        font-size: 36px;
+        margin-bottom: 0.8rem;
+    }
+}
+.social-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li {
+        margin-inline: 1.2rem;
+        cursor: pointer;
+
+        i {
+            color: rgb(243, 89, 28);
+        }
+    }
+}

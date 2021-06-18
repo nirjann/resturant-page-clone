@@ -17,7 +17,7 @@ module.exports = {
     devServer: {
         contentBase: './dist',
     },
-
+    devtool: 'inline-source-map',
     plugins: [
         new htmlWebpackPlugin({
             inject: 'body',
@@ -36,6 +36,13 @@ module.exports = {
             {
                 test: /\.(jpg|jpeg|png|svg)$/i,
                 type: 'asset/resource',
+            },
+            {
+                test:/\.json$/i,
+                type: 'json',
+                parser: {
+                    parse: JSON.parse,
+                },
             },
        
         ],

@@ -5,6 +5,7 @@ function createHeaderSkeleton() {
     headerSection.classList.add('header');
     const containerDiv = document.createElement('div');
     containerDiv.classList.add('container', 'header-container');
+    containerDiv.id = "Home";
     headerSection.appendChild(containerDiv);
 
     const navbar = document.createElement('div');
@@ -26,7 +27,7 @@ function createNavbarSkeleton() {
     navMenuWrapper.classList.add('nav-menu-wrapper');
     const navMenu = document.createElement('ul');
     navMenu.classList.add('nav-menu')
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         let li = document.createElement('li');
         li.classList.add('nav-item');
         navMenu.appendChild(li);
@@ -45,11 +46,11 @@ function renderNavbar() {
     navLogo.innerHTML = "<h2>EsoKhai</h2>";
 
     const navItems = document.querySelectorAll('.nav-item');
-    let navLinkTexts = ['Home', 'Chef', 'Contact'];
+    let navLinkTexts = ['Home', 'Chef', 'Menu','Contact'];
     let i = 0;
     navItems.forEach(item => {
         let a = document.createElement('a');
-        a.setAttribute('href', '#');
+        a.setAttribute('href', `#${navLinkTexts[i]}`);
         a.classList.add('nav-link', 'btn-secondary');
         a.textContent = navLinkTexts[i];
         i++;
